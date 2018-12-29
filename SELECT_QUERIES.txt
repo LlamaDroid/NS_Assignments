@@ -44,19 +44,20 @@
 	FROM Customers;
 23. SELECT DISTINCT EmployeeID, CustomerID
 	FROM Orders;
-24. At least 7.
-25. 	Customers, 91
-	Orders, 196
-	OrderDetails, 518
-	Shippers, 3
-	Employees, 10
-	Categories, 8
-	Products, 77
+24. From the link "Your Database" there are 8 tables, from the vehicles database there is one table.
+25. Your Database: Customers, 91    Vehicles: Cars, 428
+  	 	   Orders, 196
+ 	  	   OrderDetails, 518
+	  	   Shippers, 3
+	  	   Employees, 10
+		   Categories, 8
+		   Products, 77
+		   Suppliers, 29
 26. SELECT Model, Make
 	FROM Cars 
 	WHERE DriveTrain ='All';
-	--92 if we use the cars database
+	--92 if we use the vehicles database
 27. SELECT Origin, Type
 	FROM Cars
 	WHERE Origin = 'USA';
-	---147 again, if using the cars database.
+	---147 again, if using the vehicles database.
