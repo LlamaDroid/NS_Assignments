@@ -10,8 +10,8 @@
 	FROM Customers;
 6. SELECT CustomerID, CustomerName, Country 
 	FROM Customers;
-7. SELECT OrderID   **** no
-	FROM Customers; **** results
+7. SELECT OrderID
+	FROM Customers;
 8. SELECT CustomerID
 	FROM Orders;
 9. SELECT CustomerID, EmployeeID, OrderDate 
@@ -19,12 +19,12 @@
 10. SELECT ShipperID, OrderID 
 	FROM Orders;
 11. SELECT OrderDate, Country 
-	FROM Orders; ***no country field
+	FROM Orders;
 12. SELECT OrderDetailID 
 	FROM OrderDetails;
 13. SELECT ShipperName, Phone 
 	FROM Shippers;
-14. SELECT LastName, FirstName ****no such column
+14. SELECT LastName, FirstName
 	FROM Customers;
 15. SELECT LastName, FirstName, Notes 
 	FROM Employees;
@@ -45,7 +45,7 @@
 23. SELECT DISTINCT EmployeeID, CustomerID
 	FROM Orders;
 24. At least 7.
-25. Customers, 91
+25. 	Customers, 91
 	Orders, 196
 	OrderDetails, 518
 	Shippers, 3
@@ -55,8 +55,8 @@
 26. SELECT Model, Make
 	FROM Cars 
 	WHERE DriveTrain ='All';
-	--92 
+	--92 if we use the cars database
 27. SELECT Origin, Type
 	FROM Cars
 	WHERE Origin = 'USA';
-	---147
+	---147 again, if using the cars database.
