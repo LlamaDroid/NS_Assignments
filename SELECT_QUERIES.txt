@@ -1,0 +1,62 @@
+1. SELECT *
+	FROM Customers;
+2. SELECT CustomerID 
+	FROM Customers;
+3. SELECT CustomerID, CustomerName 
+	FROM Customers;
+4. SELECT ContactName, Address, City 
+	FROM Customers;
+5. SELECT Country
+	FROM Customers;
+6. SELECT CustomerID, CustomerName, Country 
+	FROM Customers;
+7. SELECT OrderID   **** no
+	FROM Customers; **** results
+8. SELECT CustomerID
+	FROM Orders;
+9. SELECT CustomerID, EmployeeID, OrderDate 
+	FROM Orders;
+10. SELECT ShipperID, OrderID 
+	FROM Orders;
+11. SELECT OrderDate, Country 
+	FROM Orders; ***no country field
+12. SELECT OrderDetailID 
+	FROM OrderDetails;
+13. SELECT ShipperName, Phone 
+	FROM Shippers;
+14. SELECT LastName, FirstName ****no such column
+	FROM Customers;
+15. SELECT LastName, FirstName, Notes 
+	FROM Employees;
+16. SELECT BirthDate 
+	FROM Employees;
+17. SELECT EmployeeID, Photo 
+	FROM Employees;
+18. SELECT CategoryName, Description 
+	FROM Categories;
+19. SELECT ProductID, ProductName 
+	FROM Products;
+20. SELECT SupplierID
+	FROM Products;
+21. SELECT Unit, Price 
+	FROM Products;
+22. SELECT DISTINCT Country 
+	FROM Customers;
+23. SELECT DISTINCT EmployeeID, CustomerID
+	FROM Orders;
+24. At least 7.
+25. Customers, 91
+	Orders, 196
+	OrderDetails, 518
+	Shippers, 3
+	Employees, 10
+	Categories, 8
+	Products, 77
+26. SELECT Model, Make
+	FROM Cars 
+	WHERE DriveTrain ='All';
+	--92 
+27. SELECT Origin, Type
+	FROM Cars
+	WHERE Origin = 'USA';
+	---147
