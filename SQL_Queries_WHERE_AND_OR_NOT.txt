@@ -1,0 +1,114 @@
+1.  SELECT * 
+	FROM Customers 
+	WHERE country='Germany' 
+	AND city='Berlin';
+	--1
+2.  SELECT * 
+	FROM Customers 
+	WHERE country='Germany' 
+	AND city='Paris';
+	--0
+3.  SELECT * 
+	FROM Customers 
+	WHERE country='Austria' 
+	AND city='Graz';
+	--1
+4.  SELECT * 
+	FROM Customers 
+	WHERE country='France' 
+	AND city='Paris';
+	--2
+5.  SELECT * 
+	FROM Customers 
+	WHERE country='France' 
+	AND city='Lille';
+	--1
+6.  SELECT * 
+	FROM Customers 
+	WHERE country='Spain' 
+	AND city='Barcelona';
+	--1
+7.  SELECT CustomerID, CustomerName, ContactName 
+	FROM Customers 
+	WHERE country='Germany' 
+	AND city='Berlin';
+	--1
+8.  SELECT CustomerID, CustomerName, ContactName 
+	FROM Customers 
+	WHERE country='Germany' 
+	AND city='Paris';
+	--0
+9.  SELECT CustomerID, CustomerName, ContactName 
+	FROM Customers 
+	WHERE country='Austria' 
+	AND city='Graz';
+	--1
+10. SELECT CustomerID, CustomerName, ContactName 
+	FROM Customers 
+	WHERE country='France' 
+	AND city='Paris';
+	--2
+11. SELECT CustomerID, CustomerName, ContactName 
+	FROM Customers 
+	WHERE country='France' 
+	AND city='Lille';
+	--1
+12. SELECT CustomerID, CustomerName, ContactName 
+	FROM Customers 
+	WHERE country='Spain' 
+	AND city='Barcelona';
+	--1
+13. SELECT City 
+	FROM Customers 
+	WHERE NOT country='Mexico';
+	--86
+14. SELECT City 
+	FROM Customers 
+	WHERE NOT country='Portland';
+	--91
+15. SELECT CustomerID, City, Address
+	FROM Customers 
+	WHERE NOT country='US';
+	--91
+16. SELECT City
+	FROM Customers 
+	WHERE NOT country='Finland';
+	--89
+17. SELECT City, Address
+	FROM Customers 
+	WHERE NOT country='Brazil';
+	--82
+18. SELECT City
+	FROM Customers 
+	WHERE NOT country='Germany';
+	--80
+19. SELECT *
+	FROM Customers 
+	WHERE Country='Germany'
+    AND (City='Mannheim' OR City='Munchen');
+	--1
+20. SELECT *
+	FROM Customers 
+	WHERE Country='USA'
+    AND (City='Seattle' OR City='Portland');
+	--3
+21. SELECT *
+	FROM Customers 
+	WHERE Country='USA'
+    AND (City='Anchorage' OR City='Albuquerque');
+	--2
+22. SELECT *
+	FROM Customers 
+	WHERE Country='USA'
+    AND (City='Kirkland' OR City='Seattle');
+	--2
+23. SELECT *
+	FROM Customers 
+	WHERE Country='Mexico'
+    AND (City='Mexico D.F.' OR City='Spain');
+	--0
+24. SELECT *
+	FROM Customers 
+	WHERE Country='Spain'
+    AND (City='Madrid' OR City='Barcelona' OR City='Sevilla');
+	--5
